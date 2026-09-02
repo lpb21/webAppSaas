@@ -1231,6 +1231,64 @@
     margin:0 auto;
   }
   @media (max-width:900px){.pricing-grid{grid-template-columns:1fr}}
+  .pricing-grid-periods{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:16px;
+    margin-bottom:48px;
+  }
+  @media(max-width:900px){
+    .pricing-grid-periods{grid-template-columns:repeat(2,1fr);}
+  }
+  @media(max-width:560px){
+    .pricing-grid-periods{grid-template-columns:1fr;}
+  }
+  .all-included{
+    max-width:720px;
+    margin:0 auto;
+    text-align:center;
+    padding:32px;
+    background:var(--bg-elev);
+    border:1px solid var(--line);
+    border-radius:16px;
+  }
+  .all-included-title{
+    font-family:'Montserrat',sans-serif;
+    font-weight:800;
+    font-size:18px;
+    margin-bottom:20px;
+    color:var(--text);
+  }
+  .all-included-features{
+    list-style:none;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px 24px;
+    text-align:left;
+    margin-bottom:20px;
+  }
+  @media(max-width:560px){
+    .all-included-features{grid-template-columns:1fr;}
+  }
+  .all-included-features li{
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+    font-size:14px;
+    color:var(--text-soft);
+  }
+  .all-included-features li svg{
+    width:18px;height:18px;
+    color:var(--accent);
+    flex-shrink:0;
+    margin-top:2px;
+  }
+  .all-included-note{
+    font-size:13px;
+    color:var(--text-dim);
+    padding-top:16px;
+    border-top:1px solid var(--line);
+  }
   .plan{
     background:linear-gradient(180deg, rgba(245,239,230,0.02), transparent);
     border:1px solid var(--line);
@@ -2053,75 +2111,73 @@
   <div class="container">
     <div class="pricing-head">
       <span class="eyebrow">Precios</span>
-      <h2>Planes que <em>se pagan solos</em> con lo que dejas de perder.</h2>
-      <p>Sin contratos forzados, sin letra pequeña. Empiezas el mes gratis y decides si te queda.</p>
+      <h2>Un solo plan. <em>Todo incluido.</em> Pagas por el tiempo que quieras.</h2>
+      <p>Sin planes que te limitan, sin letra pequeña. Todas las funciones desde el primer día. Empiezas con 7 días gratis y decides si te queda.</p>
     </div>
-    <div class="pricing-toggle">
-      <span class="pricing-toggle-label active" id="label-monthly">Mensual</span>
-      <div class="pricing-toggle-switch" id="toggle-pricing"></div>
-      <span class="pricing-toggle-label" id="label-annual">Anual <span class="save">−20%</span></span>
-    </div>
-    <div class="pricing-grid">
+
+    <div class="pricing-grid pricing-grid-periods">
 
       <div class="plan reveal">
-        <div class="plan-name">Inicial</div>
-        <div class="plan-desc">Para salsamentarias que están arrancando con un solo punto de venta.</div>
+        <div class="plan-name">Mensual</div>
+        <div class="plan-desc">Sin permanencia. Pagas mes a mes.</div>
         <div class="plan-price">
           <span class="plan-price-cur">$</span>
-          <span class="plan-price-num" data-monthly="89" data-annual="71">89</span>
-          <span class="plan-price-cur">.000</span>
+          <span class="plan-price-num">50.000</span>
         </div>
-        <div class="plan-price-period">/mes · 1 caja</div>
+        <div class="plan-price-period">/mes</div>
         <a href="#demo" class="btn btn-ghost plan-cta">Empezar</a>
-        <ul class="plan-features">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Punto de venta completo</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Inventario básico por producto</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Crédito hasta 25 clientes</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Cuadre de caja diario</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Soporte por chat</li>
-        </ul>
       </div>
 
-      <div class="plan featured reveal reveal-delay-1">
-        <div class="plan-name">Profesional</div>
-        <div class="plan-desc">Para salsamentarias establecidas con flujo constante de perecederos y crédito.</div>
+      <div class="plan reveal reveal-delay-1">
+        <div class="plan-name">Trimestral</div>
+        <div class="plan-desc">Ahorras 10% frente al mensual.</div>
         <div class="plan-price">
           <span class="plan-price-cur">$</span>
-          <span class="plan-price-num" data-monthly="169" data-annual="135">169</span>
-          <span class="plan-price-cur">.000</span>
+          <span class="plan-price-num">135.000</span>
         </div>
-        <div class="plan-price-period">/mes · hasta 3 cajas</div>
-        <a href="#demo" class="btn btn-primary plan-cta">Agenda demo</a>
-        <ul class="plan-features">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Todo lo del plan Inicial</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Inventario por lote y vencimientos</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Alertas de perecederos automáticas</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Crédito ilimitado + recordatorios WhatsApp</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Cortes mensuales y reportes</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Soporte prioritario</li>
-        </ul>
+        <div class="plan-price-period">/trimestre · <span class="save">−10%</span></div>
+        <a href="#demo" class="btn btn-ghost plan-cta">Empezar</a>
       </div>
 
-      <div class="plan reveal reveal-delay-2">
-        <div class="plan-name">Cadena</div>
-        <div class="plan-desc">Para varias sucursales que necesitan consolidar y comparar resultados.</div>
+      <div class="plan reveal reveal-delay-1">
+        <div class="plan-name">Semestral</div>
+        <div class="plan-desc">Ahorras 15% frente al mensual.</div>
         <div class="plan-price">
           <span class="plan-price-cur">$</span>
-          <span class="plan-price-num" data-monthly="349" data-annual="279">349</span>
-          <span class="plan-price-cur">.000</span>
+          <span class="plan-price-num">255.000</span>
         </div>
-        <div class="plan-price-period">/mes · hasta 8 cajas</div>
-        <a href="#demo" class="btn btn-ghost plan-cta">Hablar con ventas</a>
-        <ul class="plan-features">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Todo lo del plan Profesional</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Multi-sucursal consolidada</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Roles y permisos por usuario</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Comparativo entre locales</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>API e integraciones</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Gerente de cuenta dedicado</li>
-        </ul>
+        <div class="plan-price-period">/semestre · <span class="save">−15%</span></div>
+        <a href="#demo" class="btn btn-ghost plan-cta">Empezar</a>
       </div>
 
+      <div class="plan featured reveal reveal-delay-2">
+        <div class="plan-name">Anual</div>
+        <div class="plan-desc">El mejor valor: 2 meses gratis.</div>
+        <div class="plan-price">
+          <span class="plan-price-cur">$</span>
+          <span class="plan-price-num">480.000</span>
+        </div>
+        <div class="plan-price-period">/año · <span class="save">−20%</span></div>
+        <a href="#demo" class="btn btn-primary plan-cta">Empezar 7 días gratis</a>
+      </div>
+
+    </div>
+
+    <!-- Todo incluido en cualquier período -->
+    <div class="all-included">
+      <div class="all-included-title">Todo incluido en cualquier período:</div>
+      <ul class="all-included-features">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Punto de venta rápido con venta por libra</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Despiece y recetas (un producto → varios cortes)</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Inventario con lotes, fechas y alertas de vencimiento</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Lector de código de barras y pantalla al cliente</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Crédito y cuentas por cobrar sin límite</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Cuadre de caja y turnos por cajero</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Reportes y cortes mensuales (ventas, costos, margen)</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Múltiples usuarios con roles y permisos</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Soporte prioritario</li>
+      </ul>
+      <p class="all-included-note">Facturación electrónica DIAN próximamente — sin costo adicional.</p>
     </div>
   </div>
 </section>
@@ -2319,33 +2375,8 @@
     });
   });
 
-  // Pricing toggle
-  const toggle = document.getElementById('toggle-pricing');
-  const labelMonthly = document.getElementById('label-monthly');
-  const labelAnnual = document.getElementById('label-annual');
-  const priceNums = document.querySelectorAll('.plan-price-num');
-  let isAnnual = false;
-  toggle.addEventListener('click', () => {
-    isAnnual = !isAnnual;
-    toggle.classList.toggle('annual', isAnnual);
-    labelMonthly.classList.toggle('active', !isAnnual);
-    labelAnnual.classList.toggle('active', isAnnual);
-    priceNums.forEach(num => {
-      const target = isAnnual ? num.dataset.annual : num.dataset.monthly;
-      // animate
-      const current = parseInt(num.textContent);
-      const diff = parseInt(target) - current;
-      const duration = 400;
-      const start = performance.now();
-      function step(now){
-        const t = Math.min(1, (now - start) / duration);
-        const eased = 1 - Math.pow(1 - t, 3);
-        num.textContent = Math.round(current + diff * eased);
-        if (t < 1) requestAnimationFrame(step);
-      }
-      requestAnimationFrame(step);
-    });
-  });
+  // (Precios: 4 tarjetas estáticas por período, sin JS de selector)
+
 
   // Smooth anchor scroll via Lenis
   document.querySelectorAll('a[href^="#"]').forEach(link => {
