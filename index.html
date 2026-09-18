@@ -3,8 +3,111 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Punto Fresco — POS para salsamentarias</title>
-<meta name="description" content="Punto de venta, inventario, crédito, vencidos y cuadres de caja diseñado para salsamentarias.">
+<title>Punto de Venta e Inventario para Salsamentarías | Punto Fresco</title>
+<meta name="description" content="Software de punto de venta e inventario para salsamentarías. Controla ventas, crédito, vencimientos y cuadres de caja. Prueba 7 días gratis.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://puntofresco.co/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://puntofresco.co/">
+<meta property="og:site_name" content="Punto Fresco">
+<meta property="og:title" content="Punto de Venta e Inventario para Salsamentarías | Punto Fresco">
+<meta property="og:description" content="Software de punto de venta e inventario para salsamentarías. Controla ventas, crédito, vencimientos y cuadres de caja. Prueba 7 días gratis.">
+<meta property="og:image" content="https://puntofresco.co/og-image.jpg">
+<meta property="og:locale" content="es_CO">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Punto de Venta e Inventario para Salsamentarías | Punto Fresco">
+<meta name="twitter:description" content="Software de punto de venta e inventario para salsamentarías. Controla ventas, crédito, vencimientos y cuadres de caja. Prueba 7 días gratis.">
+<meta name="twitter:image" content="https://puntofresco.co/og-image.jpg">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://puntofresco.co/#organization",
+      "name": "Punto Fresco",
+      "url": "https://puntofresco.co/",
+      "logo": "https://puntofresco.co/og-image.jpg",
+      "description": "Software de punto de venta e inventario para salsamentarías."
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://puntofresco.co/#app",
+      "name": "Punto Fresco",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "url": "https://app.puntofresco.co/",
+      "description": "Punto de venta, inventario con vencimientos, crédito y cuadres de caja para salsamentarías.",
+      "offers": {
+        "@type": "Offer",
+        "price": "50000",
+        "priceCurrency": "COP",
+        "description": "Plan mensual todo incluido"
+      },
+      "publisher": { "@id": "https://puntofresco.co/#organization" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://puntofresco.co/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Cómo funciona el despiece de un producto en varios cortes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Registras el producto de origen (por ejemplo, un jamón entero) y con la función de despiece lo conviertes en los cortes que vendes: tajadas, hueso, retal. El sistema descuenta el origen y suma cada corte al inventario automáticamente, registrando la merma para que tu costo quede exacto. Además puedes guardar recetas de despiece para pre-llenar los cortes con un clic."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Funciona con lectores de código de barras y venta por peso?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Funciona con cualquier lector de código de barras USB para cobrar por código, y con venta por peso (kilos y gramos) para productos que se venden al detalle. El sistema calcula el precio al instante según la cantidad pesada."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puedo pasar mis productos y clientes desde Excel?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Tienes una plantilla de Excel/CSV donde pegas tu catálogo actual (nombre, precio, unidad, stock) y el sistema lo importa en segundos. Si tienes los clientes en otra herramienta, te ayudamos con la migración."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué pasa con los datos de mis clientes y sus créditos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Los datos son tuyos, siempre. Se almacenan cifrados en la nube y puedes exportarlos o eliminarlos cuando quieras. Nunca los compartimos ni vendemos a terceros."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Necesito instalar algo o es todo web?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Punto Fresco funciona en cualquier computador, tablet o celular con navegador moderno — no instalas nada. Una sola cuenta sirve en varios dispositivos a la vez: cobra en la caja, revisa inventario en la tablet y consulta las ventas desde el celular, todo sincronizado en tiempo real."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo me capacitan para usarlo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Incluye acompañamiento para ti y tu equipo: una sesión de capacitación en vivo y una guía por módulo para que empieces a operar rápido. La mayoría de salsamentarias está operando sola en menos de una semana. El soporte responde en horario extendido."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@500&display=swap">
@@ -789,6 +892,18 @@
     background:var(--accent);
     border-radius:50%;
     flex-shrink:0;
+  }
+  .feature-card-wide{
+    grid-column:1 / -1;
+    min-height:auto;
+  }
+  .feature-card-wide .feature-card-list{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:1.25rem;
+  }
+  @media (max-width:640px){
+    .feature-card-wide .feature-card-list{grid-template-columns:1fr}
   }
 
   /* Deep dive sticky two-column */
@@ -1606,6 +1721,7 @@
     <a href="#precios">Precios</a>
   </div>
   <div class="nav-cta">
+    <a href="https://app.puntofresco.co" target="_blank" rel="noopener" class="btn btn-ghost">Iniciar sesión</a>
     <a href="#demo" class="btn btn-primary">Agenda demo</a>
   </div>
 </nav>
@@ -1618,12 +1734,13 @@
       <div class="hero-copy">
         <span class="eyebrow">POS · Inventario · Crédito · Cuadres</span>
         <h1>El punto de venta que entiende el ritmo de una <em>salsamentaria</em>.</h1>
-        <p class="hero-sub">Controla ventas al instante, lleva el inventario de productos perecederos al lote, administra el crédito de tus clientes fidelizados y cierra el día con cuadres de caja que sí cuadran — todo desde una sola pantalla.</p>
+        <p class="hero-sub">Controla ventas al instante, lleva el inventario de productos perecederos con fechas de vencimiento, administra el crédito de tus clientes fidelizados y cierra el día con cuadres de caja que sí cuadran — todo desde una sola pantalla.</p>
         <div class="hero-ctas">
           <a href="#demo" class="btn btn-primary">
             Agenda una demo
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
+          <a href="https://app.puntofresco.co" target="_blank" rel="noopener" class="btn btn-ghost">Entrar a la app</a>
           <a href="#funciones" class="btn btn-ghost">Ver funciones</a>
         </div>
         <div class="hero-meta">
@@ -1720,7 +1837,7 @@
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0zM12 9v4M12 17h.01"/></svg>
                 </div>
                 <div class="mockup-alerts-text">
-                  <strong>Queso campesino Lote #B-241</strong> vence en 2 días · 3.2 kg en exhibición
+                  <strong>Queso campesino</strong> vence en 2 días · 3.2 kg en stock
                 </div>
                 <div class="mockup-alerts-tag">Alerta</div>
               </div>
@@ -1759,7 +1876,7 @@
       <div class="pain-item">
         <div class="pain-num">01 / Merma</div>
         <h3 class="pain-title">El jamón se vence en exhibición porque nadie lo vio llegar</h3>
-        <p class="pain-text">Sin control de lotes y fechas de vencimiento, los productos perecederos se pudren en la nevera antes de que te enteres. Cada kilo perdido son $40–80 mil pesos que se van del bolsillo.</p>
+        <p class="pain-text">Sin control de fechas de vencimiento, los productos perecederos se pudren en la nevera antes de que te enteres. Cada kilo perdido son $40–80 mil pesos que se van del bolsillo.</p>
       </div>
       <div class="pain-item">
         <div class="pain-num">02 / Crédito</div>
@@ -1795,8 +1912,8 @@
         <p class="feature-card-text">Cobra por código de barras, por peso o por nombre. Ventas en efectivo, tarjeta, transferencia o crédito, todo en la misma transacción.</p>
         <ul class="feature-card-list">
           <li>Catálogo con fotos y precios por kilo</li>
-          <li>Atajos de teclado para productos top</li>
-          <li>Descuentos y promos por horario</li>
+          <li>Venta por código de barras</li>
+          <li>Pantalla cliente en vivo</li>
         </ul>
       </div>
 
@@ -1804,12 +1921,12 @@
         <div class="feature-card-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h18v18H3zM3 9h18M9 21V9"/><circle cx="15" cy="15" r="1.5"/></svg>
         </div>
-        <h3 class="feature-card-title">Inventario por lote</h3>
-        <p class="feature-card-text">Cada entrada de mercancía se registra con su lote y fecha de vencimiento. Sabes exactamente cuántos kilos tienes, en qué nevera y cuándo se vencen.</p>
+        <h3 class="feature-card-title">Inventario con vencimientos</h3>
+        <p class="feature-card-text">Cada producto registra su fecha de vencimiento y su stock. Sabes exactamente cuánto tienes y cuándo se vence, con avisos de bajo inventario.</p>
         <ul class="feature-card-list">
-          <li>Movimientos entre bodega y exhibición</li>
-          <li>Ajustes por merma y rotura</li>
-          <li>Stock mínimo con reorder automático</li>
+          <li>Entradas, salidas y ajustes</li>
+          <li>Mermas y devoluciones con causa</li>
+          <li>Aviso de stock bajo</li>
         </ul>
       </div>
 
@@ -1818,11 +1935,11 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2M16 3.13a4 4 0 0 1 0 7.75M21 21v-2a4 4 0 0 0-3-3.87"/></svg>
         </div>
         <h3 class="feature-card-title">Crédito y clientes</h3>
-        <p class="feature-card-text">Lleva la cuenta de cada cliente de fiado: saldo, fecha límite de pago e historial completo. Alertas automáticas cuando se acercan al cupo o al vencimiento.</p>
+        <p class="feature-card-text">Lleva la cuenta de cada cliente de fiado: saldo, cupo e historial de abonos. El sistema bloquea la venta cuando el cliente supera su cupo de crédito.</p>
         <ul class="feature-card-list">
           <li>Cupo de crédito personalizable</li>
-          <li>Estado de cuenta imprimible</li>
-          <li>Recordatorios por WhatsApp</li>
+          <li>Estado de cuenta por cliente</li>
+          <li>Historial de abonos y saldo</li>
         </ul>
       </div>
 
@@ -1830,12 +1947,12 @@
         <div class="feature-card-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
         </div>
-        <h3 class="feature-card-title">Alertas de perecederos</h3>
-        <p class="feature-card-text">Notificaciones automáticas 7, 3 y 1 día antes del vencimiento. Marca productos para promocionar, rebajar o donar antes de que se pierdan.</p>
+        <h3 class="feature-card-title">Vencimientos y perecederos</h3>
+        <p class="feature-card-text">Panel de productos por vencer y ya vencidos para que marques qué vender primero, qué rebajar o qué dar de baja antes de que se pierda.</p>
         <ul class="feature-card-list">
           <li>Dashboard de vencidos y por vencer</li>
-          <li>Alertas push y por correo</li>
-          <li>Reporte de merma real vs. teórica</li>
+          <li>Avisos de productos próximos a vencer</li>
+          <li>Registro de mermas con causa</li>
         </ul>
       </div>
 
@@ -1847,7 +1964,7 @@
         <p class="feature-card-text">Cierre de mes con un clic: ventas totales, costos, margen, créditos otorgados, créditos cobrados y utilidad neta. Listo para contador o para tu declaración.</p>
         <ul class="feature-card-list">
           <li>Reporte de utilidad bruta y neta</li>
-          <li>Exportable a Excel y PDF</li>
+          <li>Exportable a Excel y CSV</li>
           <li>Comparativo mes a mes</li>
         </ul>
       </div>
@@ -1861,7 +1978,20 @@
         <ul class="feature-card-list">
           <li>Cuadre por turno o por día</li>
           <li>Detección automática de diferencias</li>
-          <li>Historial de cierres con firma digital</li>
+          <li>Historial de cierres y turnos</li>
+        </ul>
+      </div>
+
+      <div class="feature-card feature-card-wide reveal">
+        <div class="feature-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="13" height="10" rx="2"/><path d="M5 21h7M8.5 13v8"/><rect x="16" y="7" width="6" height="13" rx="2"/><path d="M19 17h.01"/></svg>
+        </div>
+        <h3 class="feature-card-title">Úsalo en tablet, celular y computador</h3>
+        <p class="feature-card-text">Una sola cuenta para todo tu equipo, en todos tus dispositivos. Cobra desde el computador de la caja, revisa el inventario en la tablet del mostrador y consulta las ventas desde tu celular — todo sincronizado en tiempo real.</p>
+        <ul class="feature-card-list">
+          <li>Funciona 100% en el navegador, sin instalar nada</li>
+          <li>Misma cuenta en varios dispositivos a la vez</li>
+          <li>Datos sincronizados en tiempo real</li>
         </ul>
       </div>
 
@@ -1875,14 +2005,14 @@
     <div class="deepdive-grid">
       <div class="deepdive-sticky">
         <span class="eyebrow">01 · Inventario perecedero</span>
-        <h2>Cada kilo con <em>lote y fecha</em>. Nunca más se te vence algo sin saberlo.</h2>
-        <p>En una salsamentaria el inventario no es solo "cuánto tengo" — es "cuánto tengo, en qué lote entró y cuándo se vence". Punto Fresco lleva ese control a nivel de cada ingreso de mercancía, así sabes qué vender primero y qué promocionar antes de perderlo.</p>
+        <h2>Cada kilo con <em>fecha y stock</em>. Nunca más se te vence algo sin saberlo.</h2>
+        <p>En una salsamentaria el inventario no es solo "cuánto tengo" — es "cuánto tengo, cuándo se vence y a qué costo". Punto Fresco lleva ese control a nivel de cada producto, así sabes qué vender primero y qué dar de baja antes de perderlo.</p>
         <ul>
-          <li><span>01</span><span>Registro de entrada con lote, proveedor y fecha de vencimiento</span></li>
-          <li><span>02</span><span>Alertas automáticas 7, 3 y 1 día antes del vencimiento</span></li>
-          <li><span>03</span><span>Transferencias entre bodega, exhibición y nevera</span></li>
+          <li><span>01</span><span>Registro de producto con proveedor, costo y fecha de vencimiento</span></li>
+          <li><span>02</span><span>Avisos de productos por vencer y vencidos</span></li>
+          <li><span>03</span><span>Movimientos de inventario: entradas, salidas, ajustes y transformaciones</span></li>
           <li><span>04</span><span>Reporte de merma con causa y costo</span></li>
-          <li><span>05</span><span>Stock mínimo con sugerencia de pedido al proveedor</span></li>
+          <li><span>05</span><span>Aviso de stock bajo</span></li>
         </ul>
       </div>
       <div class="deepdive-visual">
@@ -1892,37 +2022,37 @@
             <span class="badge">3 críticos</span>
           </div>
           <div class="product-row">
-            <div class="product-name">Queso campesino <small>Nevera 2 · Lote B-241</small></div>
+            <div class="product-name">Queso campesino <small>SKU QC-001</small></div>
             <div class="product-batch">3.2 kg</div>
             <div class="product-status crit">2 días</div>
             <div class="product-bar"><div class="product-bar-fill" style="width:88%"></div></div>
           </div>
           <div class="product-row">
-            <div class="product-name">Jamón ahumado <small>Exhibición · Lote J-118</small></div>
+            <div class="product-name">Jamón ahumado <small>SKU JA-014</small></div>
             <div class="product-batch">1.8 kg</div>
             <div class="product-status crit">3 días</div>
             <div class="product-bar"><div class="product-bar-fill" style="width:78%"></div></div>
           </div>
           <div class="product-row">
-            <div class="product-name">Salchichón cervecero <small>Nevera 1 · Lote S-087</small></div>
+            <div class="product-name">Salchichón cervecero <small>SKU SC-008</small></div>
             <div class="product-batch">4.5 kg</div>
             <div class="product-status warn">5 días</div>
             <div class="product-bar"><div class="product-bar-fill" style="width:55%"></div></div>
           </div>
           <div class="product-row">
-            <div class="product-name">Mortadela con tocino <small>Exhibición · Lote M-203</small></div>
+            <div class="product-name">Mortadela con tocino <small>SKU MT-022</small></div>
             <div class="product-batch">2.1 kg</div>
             <div class="product-status warn">6 días</div>
             <div class="product-bar"><div class="product-bar-fill" style="width:45%"></div></div>
           </div>
           <div class="product-row">
-            <div class="product-name">Butifarra blanca <small>Nevera 2 · Lote B-156</small></div>
+            <div class="product-name">Butifarra blanca <small>SKU BB-007</small></div>
             <div class="product-batch">3.0 kg</div>
             <div class="product-status ok">12 días</div>
             <div class="product-bar"><div class="product-bar-fill" style="width:25%"></div></div>
           </div>
           <div class="product-row">
-            <div class="product-name">Queso mozzarella <small>Nevera 1 · Lote Q-094</small></div>
+            <div class="product-name">Queso mozzarella <small>SKU QM-003</small></div>
             <div class="product-batch">5.4 kg</div>
             <div class="product-status ok">18 días</div>
             <div class="product-bar"><div class="product-bar-fill" style="width:15%"></div></div>
@@ -1949,55 +2079,55 @@
           <div class="credito-client">
             <div class="credito-client-info">
               <div class="credito-client-avatar"></div>
-              <div class="credito-client-name">Restaurante La Esquina <small>Cupo: $500k · Vence: 30 nov</small></div>
+              <div class="credito-client-name">Restaurante La Esquina <small>Cupo: $500k</small></div>
             </div>
             <div class="credito-client-deuda">$487.000</div>
-            <div class="credito-client-status warn">Por vencer</div>
+            <div class="credito-client-status warn">Cerca del cupo</div>
           </div>
           <div class="credito-client">
             <div class="credito-client-info">
               <div class="credito-client-avatar"></div>
-              <div class="credito-client-name">Doña Rosa — Catering <small>Cupo: $300k · Vence: 28 nov</small></div>
+              <div class="credito-client-name">Doña Rosa — Catering <small>Cupo: $300k</small></div>
             </div>
             <div class="credito-client-deuda">$312.500</div>
-            <div class="credito-client-status crit">Vencido</div>
+            <div class="credito-client-status crit">Sobre el cupo</div>
           </div>
           <div class="credito-client">
             <div class="credito-client-info">
               <div class="credito-client-avatar"></div>
-              <div class="credito-client-name">Sra. Martínez <small>Cupo: $200k · Vence: 15 dic</small></div>
+              <div class="credito-client-name">Sra. Martínez <small>Cupo: $200k</small></div>
             </div>
             <div class="credito-client-deuda">$184.200</div>
-            <div class="credito-client-status allday">Al día</div>
+            <div class="credito-client-status allday">Dentro del cupo</div>
           </div>
           <div class="credito-client">
             <div class="credito-client-info">
               <div class="credito-client-avatar"></div>
-              <div class="credito-client-name">Sr. Hernández <small>Cupo: $150k · Vence: 20 dic</small></div>
+              <div class="credito-client-name">Sr. Hernández <small>Cupo: $150k</small></div>
             </div>
             <div class="credito-client-deuda">$95.000</div>
-            <div class="credito-client-status allday">Al día</div>
+            <div class="credito-client-status allday">Dentro del cupo</div>
           </div>
           <div class="credito-client">
             <div class="credito-client-info">
               <div class="credito-client-avatar"></div>
-              <div class="credito-client-name">Bodega El Sol <small>Cupo: $400k · Vence: 10 dic</small></div>
+              <div class="credito-client-name">Bodega El Sol <small>Cupo: $400k</small></div>
             </div>
             <div class="credito-client-deuda">$328.700</div>
-            <div class="credito-client-status allday">Al día</div>
+            <div class="credito-client-status allday">Dentro del cupo</div>
           </div>
         </div>
       </div>
       <div class="deepdive-sticky">
         <span class="eyebrow">02 · Crédito y clientes</span>
         <h2>El fiado <em>organizado</em>, con límites, fechas y cobranza automática.</h2>
-        <p>En una salsamentaria el crédito es cultura: clientes fijos que pagan quincenal o mensual. Punto Fresco lo formaliza — cada cliente con su cupo, su fecha de pago y su estado de cuenta al detalle. Tú dejas de perseguir cuentas y empiezas a cobrar a tiempo.</p>
+        <p>En una salsamentaria el crédito es cultura: clientes fijos que pagan quincenal o mensual. Punto Fresco lo formaliza — cada cliente con su cupo, su saldo y su estado de cuenta al detalle. Tú dejas de perseguir cuentas y empiezas a cobrar a tiempo.</p>
         <ul>
-          <li><span>01</span><span>Cupo de crédito y plazo de pago por cliente</span></li>
-          <li><span>02</span><span>Bloqueo automático al superar el cupo o vencer plazo</span></li>
+          <li><span>01</span><span>Cupo de crédito por cliente</span></li>
+          <li><span>02</span><span>Bloqueo automático al superar el cupo</span></li>
           <li><span>03</span><span>Estado de cuenta con historial completo de abonos</span></li>
-          <li><span>04</span><span>Recordatorios automáticos por WhatsApp y correo</span></li>
-          <li><span>05</span><span>Reporte de cartera por vencer y vencida</span></li>
+          <li><span>04</span><span>Listado de cuentas por cobrar con saldo</span></li>
+          <li><span>05</span><span>Reporte de cuentas por cobrar y saldos</span></li>
         </ul>
       </div>
     </div>
@@ -2016,8 +2146,8 @@
           <li><span>01</span><span>Cuadre por turno, por día y por vendedor</span></li>
           <li><span>02</span><span>Detección automática de diferencias por método de pago</span></li>
           <li><span>03</span><span>Cierre mensual con utilidad, costos y margen</span></li>
-          <li><span>04</span><span>Exportable a Excel, PDF y formato contador</span></li>
-          <li><span>05</span><span>Historial inmutable con firma digital del responsable</span></li>
+          <li><span>04</span><span>Exportable a Excel y CSV</span></li>
+          <li><span>05</span><span>Historial de cierres por turno y responsable</span></li>
         </ul>
       </div>
       <div class="deepdive-visual">
@@ -2073,7 +2203,7 @@
     </div>
     <div class="testimonials-grid">
       <div class="testimonial reveal">
-        <p class="testimonial-quote">Antes perdíamos como 8 kilos de queso al mes por vencimiento. Desde que llegamos a Punto Fresco, las alertas nos permiten promocionar lo que está por vencer. Hemos bajado la merma a menos de 2 kilos.</p>
+        <p class="testimonial-quote">Antes perdíamos como 8 kilos de queso al mes por vencimiento. Desde que llegamos a Punto Fresco, los avisos de vencimiento nos permiten promocionar lo que está por vencer. Hemos bajado la merma a menos de 2 kilos.</p>
         <div class="testimonial-author">
           <div class="testimonial-avatar"></div>
           <div>
@@ -2093,7 +2223,7 @@
         </div>
       </div>
       <div class="testimonial reveal reveal-delay-2">
-        <p class="testimonial-quote">Cerrar caja me tomaba una hora y media cada noche, y aun así faltaba dinero. Hoy el cuadre sale en cinco minutos y cuadra al peso. Mi contador recibe el cierre mensual por correo y ya no me cobra extra por organizar las cifras.</p>
+        <p class="testimonial-quote">Cerrar caja me tomaba una hora y media cada noche, y aun así faltaba dinero. Hoy el cuadre sale en cinco minutos y cuadra al peso. Mi contador recibe el cierre mensual listo y ya no me cobra extra por organizar las cifras.</p>
         <div class="testimonial-author">
           <div class="testimonial-avatar"></div>
           <div>
@@ -2167,17 +2297,18 @@
     <div class="all-included">
       <div class="all-included-title">Todo incluido en cualquier período:</div>
       <ul class="all-included-features">
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Punto de venta rápido con venta por libra</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Punto de venta rápido con venta por peso</li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Despiece y recetas (un producto → varios cortes)</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Inventario con lotes, fechas y alertas de vencimiento</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Inventario con fechas y avisos de vencimiento</li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Lector de código de barras y pantalla al cliente</li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Crédito y cuentas por cobrar sin límite</li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Cuadre de caja y turnos por cajero</li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Reportes y cortes mensuales (ventas, costos, margen)</li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Múltiples usuarios con roles y permisos</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Soporte prioritario</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Gestión de proveedores</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Importación de productos desde Excel/CSV</li>
       </ul>
-      <p class="all-included-note">Facturación electrónica DIAN próximamente — sin costo adicional.</p>
+      <p class="all-included-note">Exportación a Excel/CSV incluida en todos los períodos.</p>
     </div>
   </div>
 </section>
@@ -2195,21 +2326,21 @@
 
         <div class="faq-item">
           <button class="faq-q">
-            ¿Necesito internet todo el tiempo para usarlo?
+            ¿Cómo funciona el despiece de un producto en varios cortes?
             <svg class="faq-q-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
           </button>
           <div class="faq-a"><div class="faq-a-inner">
-            No. Punto Fresco funciona en modo offline: sigues vendiendo, registrando inventario y otorgando crédito sin conexión. Cuando vuelve el internet, todo se sincroniza automáticamente con la nube. Esto es clave para salsamentarias en zonas con conexión inestable.
+            Registras el producto de origen (por ejemplo, un jamón entero) y con la función de despiece lo conviertes en los cortes que vendes: tajadas, hueso, retal. El sistema descuenta el origen y suma cada corte al inventario automáticamente, registrando la merma para que tu costo quede exacto. Además puedes guardar recetas de despiece para pre-llenar los cortes con un clic.
           </div></div>
         </div>
 
         <div class="faq-item">
           <button class="faq-q">
-            ¿Funciona con balanzas y lectores de código de barras?
+            ¿Funciona con lectores de código de barras y venta por peso?
             <svg class="faq-q-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
           </button>
           <div class="faq-a"><div class="faq-a-inner">
-            Sí. Integración nativa con balanzas impresoras Bizerba, CAS y Torrey, y con cualquier lector de código de barras USB. Los productos pesados se venden por kilo directo desde la balanza y el sistema calcula el precio al instante.
+            Sí. Funciona con cualquier lector de código de barras USB para cobrar por código, y con venta por peso (kilos y gramos) para productos que se venden al detalle. El sistema calcula el precio al instante según la cantidad pesada.
           </div></div>
         </div>
 
@@ -2219,7 +2350,7 @@
             <svg class="faq-q-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
           </button>
           <div class="faq-a"><div class="faq-a-inner">
-            Sí. Tienes una plantilla de Excel donde pegas tu catálogo actual (nombre, precio, unidad, stock) y el sistema lo importa en segundos. Si tienes los clientes en otra herramienta, te ayudamos con la migración sin costo adicional en los planes Profesional y Cadena.
+            Sí. Tienes una plantilla de Excel/CSV donde pegas tu catálogo actual (nombre, precio, unidad, stock) y el sistema lo importa en segundos. Si tienes los clientes en otra herramienta, te ayudamos con la migración.
           </div></div>
         </div>
 
@@ -2229,7 +2360,7 @@
             <svg class="faq-q-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
           </button>
           <div class="faq-a"><div class="faq-a-inner">
-            Los datos son tuyos, siempre. Se almacenan cifrados en servidores en Colombia, cumplieron la Ley 1581 de protección de datos personales, y puedes exportarlos o eliminarlos cuando quieras. Nunca los compartimos ni vendemos a terceros.
+            Los datos son tuyos, siempre. Se almacenan cifrados en la nube y puedes exportarlos o eliminarlos cuando quieras. Nunca los compartimos ni vendemos a terceros.
           </div></div>
         </div>
 
@@ -2239,7 +2370,7 @@
             <svg class="faq-q-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
           </button>
           <div class="faq-a"><div class="faq-a-inner">
-            Punto Fresco funciona en cualquier computador o tablet con navegador moderno — no instalas nada. Para el punto de venta recomendamos una app de escritorio (Windows o Mac) que mantiene el modo offline y se conecta con balanzas e impresoras más rápido.
+            Punto Fresco funciona en cualquier computador, tablet o celular con navegador moderno — no instalas nada. Una sola cuenta sirve en varios dispositivos a la vez: cobra en la caja, revisa inventario en la tablet y consulta las ventas desde el celular, todo sincronizado en tiempo real.
           </div></div>
         </div>
 
@@ -2249,7 +2380,7 @@
             <svg class="faq-q-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
           </button>
           <div class="faq-a"><div class="faq-a-inner">
-            Incluye una sesión de capacitación en vivo de 90 minutos para ti y tu equipo, más una biblioteca de videos cortos por módulo. La mayoría de salsamentarias está operando sola en menos de una semana. El soporte por chat responde en horario extendido.
+            Incluye acompañamiento para ti y tu equipo: una sesión de capacitación en vivo y una guía por módulo para que empieces a operar rápido. La mayoría de salsamentarias está operando sola en menos de una semana. El soporte responde en horario extendido.
           </div></div>
         </div>
 
@@ -2318,7 +2449,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2024 Punto Fresco SAS · Hecho en Colombia</p>
+      <p>© 2026 Punto Fresco · Hecho en Colombia</p>
       <p>Política de privacidad · Términos</p>
     </div>
   </div>
